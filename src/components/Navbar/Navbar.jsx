@@ -9,7 +9,7 @@ export const Navbar = () => {
   // console.log(menuOpen);
   return (
     <nav className={styles.navbar}>
-      <a className={styles.title} href="/">
+      <a className={styles.title}>
         Portfolio
       </a>
       <div className={styles.menu}>
