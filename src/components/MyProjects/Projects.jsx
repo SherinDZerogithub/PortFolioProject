@@ -9,7 +9,11 @@ const ProjectsPage = () => {
       <h1 className={styles.title}>My Projects</h1>
       <div className={styles.projectsGrid}>
         {projects.map((project, index) => (
-          <div className={styles.projectCard} key={index}>
+          <div
+            className={styles.projectCard}
+            key={index}
+            style={{ "--delay-index": index }}
+          >
             <img
               src={getImageUrl(project.imageSrc)}
               alt={project.title}

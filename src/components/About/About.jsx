@@ -20,7 +20,7 @@ export const About = () => {
           <div className={styles.introText}>
             <h1 className={styles.heading}>Hi, I'm Serini</h1>
             <p>
-              Hi! I’m a passionate and detail-oriented{" "}
+              Hi! I'm a passionate and detail-oriented{" "}
               <strong>Web Developer</strong> & <strong>UI Designer</strong> who
               thrives on turning ideas into reality through clean code and
               thoughtful design. I specialize in building responsive,

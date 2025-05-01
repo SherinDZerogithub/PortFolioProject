@@ -8,12 +8,20 @@ const SkillsPage = () => {
     <section className={styles.container} id="skills">
       <h1 className={styles.title}>My Expertise</h1>
       <div className={styles.skillsContainer}>
-        {skillsData.map((categoryData, idx) => (
-          <div key={idx} className={styles.categorySection}>
+        {skillsData.map((categoryData, categoryIdx) => (
+          <div
+            key={categoryIdx}
+            className={styles.categorySection}
+            style={{ "--category-index": categoryIdx }}
+          >
             <h2 className={styles.categoryTitle}>{categoryData.category}</h2>
             <div className={styles.skillsGrid}>
-              {categoryData.skills.map((skill, index) => (
-                <div className={styles.skillCard} key={index}>
+              {categoryData.skills.map((skill, skillIdx) => (
+                <div
+                  className={styles.skillCard}
+                  key={skillIdx}
+                  style={{ "--skill-index": skillIdx }}
+                >
                   <div className={styles.skillIconWrapper}>
                     <img
                       src={getImageUrl(skill.imageSrc)}

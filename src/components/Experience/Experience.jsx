@@ -10,7 +10,11 @@ export const Experience = () => {
       <div className={styles.content}>
         <div className={styles.timeline}>
           {history.map((historyItem, id) => (
-            <div key={id} className={styles.timelineItem}>
+            <div
+              key={id}
+              className={styles.timelineItem}
+              style={{ "--delay-index": id }}
+            >
               <div className={styles.timelineDot}></div>
               <div className={styles.timelineContent}>
                 <div className={styles.cardHeader}>
