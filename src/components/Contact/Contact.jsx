@@ -28,14 +28,14 @@ export const Contact = () => {
 
           <div className={styles.socialLinks}>
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/SherinDZerogithub"
               target="_blank"
               rel="noopener noreferrer"
             >
               <GithubLogo size={24} className={styles.socialIcon} />
             </a>
             <a
-              href="https://linkedin.com/in/yourusername"
+              href="https://www.linkedin.com/in/serini-p-96463a24b"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -43,7 +43,7 @@ export const Contact = () => {
             </a>
 
             <a
-              href="https://instergram.com/in/yourusername"
+              href="https://www.instagram.com/sherin_d_zero?igsh=MXRsa2FudDUzdmluaw==&utm_source=ig_contact_invite"
               target="_blank"
               rel="noopener noreferrer"
             >
