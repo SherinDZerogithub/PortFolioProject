@@ -3,7 +3,7 @@ import react from "@vitejs/plugin-react";
 
 // Replace 'react-portfolio' with your actual repo name if different
 export default defineConfig({
- // 👈 Add this line
+  base: "/PortFolioProject/", // 👈 Add this line
   plugins: [react()],
   css: {
     modules: {
