@@ -1,0 +1,8 @@
+@import "./vars.css";
+
+.App {
+  background: linear-gradient(to right, #fff176, #fffde7); /* Match navbar gradient */
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}

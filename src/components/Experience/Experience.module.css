@@ -1,0 +1,203 @@
+@import "../../vars.css";
+
+@keyframes glowMove {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.container {
+  position: relative;
+  overflow: hidden;
+  /* keep existing styles */
+  color: var(--color-text);
+  margin: 120px 10% 80px;
+  background: linear-gradient(135deg, #fff9e6 0%, #fff3b2 100%);
+  border-radius: 24px;
+  padding: 60px 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 204, 51, 0.3),
+    transparent
+  );
+  z-index: 0;
+  pointer-events: none;
+  transform: skewX(-20deg);
+}
+
+.container:hover::before {
+  animation: glowMove 1.2s linear forwards;
+}
+
+
+.title {
+  color: #2b3a55;
+  font-size: 42px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-align: center;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.title::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(to right, #f4f492, #ebb206);
+  margin: 15px auto 0;
+  border-radius: 2px;
+}
+
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  width: 3px;
+  background: linear-gradient(to bottom, #ffd166, #ffb347);
+  top: 0;
+  bottom: 0;
+  left: 30px;
+  border-radius: 3px;
+}
+
+.timelineItem {
+  position: relative;
+  padding-left: 80px;
+  margin-bottom: 50px;
+}
+
+.timelineDot {
+  position: absolute;
+  left: 22px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ffb347, #ffcc33);
+  border: 4px solid #fff;
+  box-shadow: 0 0 0 4px rgba(255, 179, 71, 0.2);
+  z-index: 1;
+}
+
+.timelineContent {
+  background: white;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timelineContent:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.companyLogo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 12px;
+  padding: 10px;
+  background: #fff9e6;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.role {
+  font-size: 22px;
+  font-weight: 700;
+  color: #2b3a55;
+  margin-bottom: 5px;
+}
+
+.duration {
+  font-size: 16px;
+  color: #6c757d;
+  font-weight: 500;
+}
+
+.experienceList {
+  margin-top: 15px;
+  padding-left: 5px;
+}
+
+.experienceItem {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #495057;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.bullet {
+  color: #ffb347;
+  margin-right: 10px;
+  font-size: 24px;
+  line-height: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin: 80px 5%;
+    padding: 40px 20px;
+  }
+
+  .timeline::before {
+    left: 20px;
+  }
+
+  .timelineItem {
+    padding-left: 60px;
+  }
+
+  .timelineDot {
+    left: 12px;
+  }
+
+  .timelineContent {
+    padding: 20px;
+  }
+
+  .cardHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .role {
+    font-size: 20px;
+  }
+
+  .experienceItem {
+    font-size: 16px;
+  }
+}

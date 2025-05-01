@@ -1,0 +1,147 @@
+@import "../../vars.css";
+@keyframes glowMove {
+    0% {
+      left: -100%;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+.container {
+    position: relative;
+    overflow: hidden;
+    /* keep existing styles */
+    color: var(--color-text);
+    margin: 120px 10% 80px;
+    background: linear-gradient(135deg, #fff9e6 0%, #fff3b2 100%);
+    border-radius: 24px;
+    padding: 60px 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  }
+
+  .container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      120deg,
+      transparent,
+      rgba(255, 204, 51, 0.3),
+      transparent
+    );
+    z-index: 0;
+    pointer-events: none;
+    transform: skewX(-20deg);
+  }
+  .container:hover::before {
+    animation: glowMove 1.2s linear forwards;
+  }
+  
+.title {
+  color: #2b3a55;
+  font-size: 42px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.title::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(to right, #90e0ef, #00b4d8);
+  margin: 15px auto 0;
+  border-radius: 2px;
+}
+
+.projectsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+.projectCard {
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.projectCard:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 30px rgba(0, 180, 216, 0.2);
+}
+
+.mediaWrapper {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+}
+
+.projectMedia {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+}
+
+.projectTitle {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 16px 20px 10px;
+  color: #2b3a55;
+}
+
+.projectDescription {
+  font-size: 14px;
+  margin: 0 20px 10px;
+  color: #555;
+}
+
+.techList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 20px 15px;
+}
+
+.tech {
+  background: #e0f7fa;
+  color: #0077b6;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.projectLink {
+  text-decoration: none;
+  color: #00b4d8;
+  font-weight: 600;
+  margin: 0 20px 20px;
+  transition: color 0.3s ease;
+}
+
+.projectLink:hover {
+  color: #0077b6;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin: 80px 5%;
+    padding: 40px 20px;
+  }
+
+  .projectMedia {
+    height: 150px;
+  }
+}

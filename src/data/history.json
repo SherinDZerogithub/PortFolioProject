@@ -1,0 +1,50 @@
+[
+  {
+    "role": "Front End developer",
+   
+    "experiences": [
+      "Crafting responsive, accessible, and performant interfaces with React, Next.js, and modern CSS."
+
+    ],
+    "imageSrc": "skills/frontend.jpg"
+  },
+  {
+    "role": "Fullstack Web Developer",
+
+    "experiences": [
+      "Building scalable APIs and services with Node.js, Express, and   MongoDB.",
+      "Integrated Cloudinary for image uploads and MongoDB for data storage"
+
+    ],
+    "imageSrc": "skills/fullstack.png"
+  },
+  {
+    "role": "UI Designer",
+   
+    "experiences": [
+      "  Creating intuitive user experiences with Figma, focusing on clean aesthetics and usability."
+
+    ],
+    "imageSrc": "skills/figma.png"
+  },
+
+  {
+    "role": "Responsive Web Designer",
+ 
+    "experiences": [
+     
+      "Utilized HTML, CSS, and JavaScript to create visually appealing and user-friendly websites"
+    ],
+    "imageSrc": "skills/Responsive.jpg"
+  },
+  {
+    
+    "role": "Graphic Designer",
+ 
+    "experiences": [
+      "Created visually appealing graphics for social media platforms using canva"
+     
+    ],
+    "imageSrc": "skills/canva.png"
+  }
+]

@@ -1,0 +1,31 @@
+[
+    {
+      "title": "E-Commerce App ",
+      "description": "Developed a full-featured E-commerce web application that allows users to browse products, add items to their cart, manage their profiles, and securely complete purchases. The admin panel enables easy product management and inventory control. Integrated user authentication, responsive design, and a dynamic shopping experience for both desktop and mobile users.(OnGoing)",
+      "imageSrc": "projects/adsync.png",
+      "tech": ["Next.js", "MongoDB", "Tailwind", "Cloudinary", "Redux Toolkit"],
+      "link": "https://github.com/yourusername/"
+    },
+    {
+      "title": "LMS Frontend PRoject",
+      "description": "A responsive frontend for a Learning Management System (LMS) designed to provide an intuitive user experience for students and instructors. Features include course browsing, user authentication, interactive dashboards. Built with modern frontend technologies for optimal performance and scalability.",
+      "videoSrc": "projects/LMS-Frontend.mp4",
+      "tech": ["React.js",
+    "TypeScript",
+    "Redux (or Zustand)",
+    "Tailwind CSS",
+    "Axios (for API calls)",
+    "React Router",
+    "Clerk Auth",
+    "JWT Authentication"],
+      "link": "https://github.com/yourusername/"
+    },
+    {
+      "title": "Portfolio Website",
+      "description": "Designed and developed a modern, responsive personal portfolio website to showcase my projects, skills, and professional experience. The site highlights my background in frontend and fullstack development, featuring interactive UI components, animated transitions, and categorized skills. It includes dedicated sections for About, Projects, Skills, and Contact, along with integration for smooth navigation and accessibility.",
+     "videoSrc": "projects/PortFolio.mp4",
+      "tech": ["React", "CSS Modules", "Vite"],
+      "link": "https://yourportfolio.com"
+    }
+  ]
+  

@@ -1,0 +1,44 @@
+[
+  {
+    "category": "Frontend",
+    "skills": [
+      { "title": "HTML", "imageSrc": "skills/html.png" },
+      { "title": "CSS", "imageSrc": "skills/css.png" },
+      { "title": "JavaScript", "imageSrc": "skills/javascript.png" },
+      { "title": "React", "imageSrc": "skills/react.png" },
+      { "title": "Next.js", "imageSrc": "skills/nextjs.256x153.png" },
+      { "title": "Tailwind CSS", "imageSrc": "skills/tailwind-css..png" }
+    ]
+  },
+  {
+    "category": "Backend",
+    "skills": [
+      { "title": "Node.js", "imageSrc": "skills/node.png" },
+      { "title": "Express.js", "imageSrc": "skills/express-js.png" },
+      { "title": "AppWrite", "imageSrc": "skills/Appwrite.png" }
+    ]
+  },
+  {
+    "category": "Database",
+    "skills": [
+      { "title": "MongoDB", "imageSrc": "skills/mongodb.png" },
+      { "title": "MySql", "imageSrc": "skills/MySQL.png" },
+      { "title": "Derby database", "imageSrc": "skills/final_logo.png" }
+    ]
+  },
+  {
+    "category": "Design",
+    "skills": [
+      { "title": "Figma", "imageSrc": "skills/figma.png" },
+      { "title": "Canva", "imageSrc": "skills/canva.png" }
+    ]
+  },
+  {
+    "category": "Languages",
+    "skills": [
+      { "title": "Java", "imageSrc": "skills/icons8-java-50.png" },
+      { "title": "Python", "imageSrc": "skills/Python.png" },
+      { "title": "PHP", "imageSrc": "skills/php.256x135.png" }
+    ]
+  }
+]
