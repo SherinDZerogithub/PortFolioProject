@@ -1,13 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serini Puwakgolla | AI/ML & Full-Stack Engineer</title>
+    <!-- Modern Google Fonts Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-base: #0a0b10;
+            --bg-surface: #12131a;
+            --bg-card: #181a24;
+            --text-primary: #f3f4f6;
+            --text-secondary: #9ca3af;
+            --accent-primary: #764ba2;
+            --accent-neon: #a855f7;
+            --border-color: #262938;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-base);
+            color: var(--text-primary);
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        /* Header / Hero Section */
+        header {
+            text-align: center;
+            padding: 3rem 0;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 3rem;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: linear-gradient(to right, #ffffff, var(--accent-neon));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            font-family: 'Fira Code', monospace;
+            margin-bottom: 1.5rem;
+        }
+
+        .social-links a {
+            color: var(--text-primary);
+            text-decoration: none;
+            margin: 0 10px;
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            background-color: var(--bg-surface);
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            border-color: var(--accent-neon);
+            box-shadow: 0 0 10px rgba(168, 85, 247, 0.2);
+        }
+
+        /* Two Column Grid Setup */
+        .layout-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2.5rem;
+        }
+
+        @media (min-width: 768px) {
+            .layout-grid {
+                grid-template-columns: 1fr 2fr;
+            }
+        }
+
+        /* Sidebar Panel */
+        .sidebar section {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-color);
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin-bottom: 1.5rem;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            border-left: 3px solid var(--accent-neon);
+            padding-left: 0.5rem;
+        }
+
+        .tech-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .tech-badge {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            padding: 0.3rem 0.6rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-family: 'Fira Code', monospace;
+            color: var(--text-secondary);
+        }
+
+        /* Project Section (Main View) */
+        .main-content h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .project-card {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-2px);
+            border-color: var(--border-color);
+        }
+
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.75rem;
+        }
+
+        .project-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #ffffff;
+        }
+
+        .project-description {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .project-tech-stack {
+            margin-bottom: 1.5rem;
+        }
+
+        .btn-repo {
+            display: inline-flex;
+            align-items: center;
+            background: var(--accent-primary);
+            color: white;
+            text-decoration: none;
+            padding: 0.6rem 1.2rem;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+
+        .btn-repo:hover {
+            background: var(--accent-neon);
+        }
+
+        footer {
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            margin-top: 5rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border-color);
+            font-family: 'Fira Code', monospace;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Serini Puwakgolla</h1>
+        <p>🎓 Final Year Computer Science Undergraduate | Aspiring AI/ML Engineer</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/serini-p-96463a24b" target="_blank">LinkedIn</a>
+            <a href="https://github.com/SherinDZerogithub" target="_blank">GitHub Profile</a>
+        </div>
+    </header>
+
+    <div class="layout-grid">
+        <!-- LEFT COLUMN: Profile info & Skills -->
+        <aside class="sidebar">
+            <section>
+                <h3>Core Focus</h3>
+                <p style="color: var(--text-secondary); font-size: 0.9rem;">Building high-performance data streams, predictive systems, and deep-stack architectures.</p>
+            </section>
+
+            <section>
+                <h3>Intelligence & Data</h3>
+                <div class="tech-list">
+                    <span class="tech-badge">Python</span>
+                    <span class="tech-badge">NumPy</span>
+                    <span class="tech-badge">Pandas</span>
+                    <span class="tech-badge">Jupyter</span>
+                    <span class="tech-badge">Java</span>
+                </div>
+            </section>
+
+            <section>
+                <h3>Fullstack & Serving</h3>
+                <div class="tech-list">
+                    <span class="tech-badge">Node.js</span>
+                    <span class="tech-badge">React Native</span>
+                    <span class="tech-badge">React</span>
+                    <span class="tech-badge">MongoDB</span>
+                    <span class="tech-badge">MySQL</span>
+                    <span class="tech-badge">Laravel</span>
+                </div>
+            </section>
+        </aside>
+
+        <!-- RIGHT COLUMN: Engineering Repositories -->
+        <main class="main-content">
+            <h2>Featured Engineering Repositories</h2>
+
+            <!-- Project 1 -->
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-title">🎬 Movie Recommendation Engine</div>
+                </div>
+                <p class="project-description">A native cross-platform mobile ecosystem leveraging structural content-filtering metadata pipelines. Implements custom user profile watchlist states and rapid streaming API lookups.</p>
+                <div class="project-tech-stack">
+                    <span class="tech-badge">React Native</span>
+                    <span class="tech-badge">Appwrite</span>
+                    <span class="tech-badge">TMDB API</span>
+                </div>
+                <br>
+                <a href="https://github.com/SherinDZerogithub/Movie-Recommendation" target="_blank" class="btn-repo">Examine Repository →</a>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-title">🎙️ Voice-To-Text Pipeline</div>
+                </div>
+                <p class="project-description">An AI-adjacent speech transcription system designed to handle real-time input audio chunk streams, executing accurate linguistic translations into readable tokenized text structures.</p>
+                <div class="project-tech-stack">
+                    <span class="tech-badge">Audio Stream Processing</span>
+                    <span class="tech-badge">NLP Pipeline</span>
+                </div>
+                <br>
+                <a href="https://github.com/SherinDZerogithub/Voice-To-Text" target="_blank" class="btn-repo">Examine Repository →</a>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-title">🛒 Data-Driven E-Commerce System</div>
+                </div>
+                <p class="project-description">A robust full-stack transactional architecture optimized for reliable inventory analytics. Features secure payment simulations, distinct admin operation portals, and granular schema validations.</p>
+                <div class="project-tech-stack">
+                    <span class="tech-badge">React</span>
+                    <span class="tech-badge">Node.js</span>
+                    <span class="tech-badge">MongoDB</span>
+                </div>
+                <br>
+                <a href="https://github.com/SherinDZerogithub/e-commerce" target="_blank" class="btn-repo">Examine Repository →</a>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>// Computed & Maintained by Serini Puwakgolla.</p>
+    </footer>
+</div>
+
+</body>
 </html>
