@@ -1,217 +1,150 @@
 @import "../../vars.css";
 
-.container {
-  margin: 120px 10% 80px;
-  background: linear-gradient(
-    120deg,
-    transparent,
-    rgba(255, 204, 51, 0.3),
-    transparent
-  );
-  border-radius: 24px;
-  padding: 60px 40px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  color: var(--color-text);
-  animation: fadeIn 0.8s ease-out forwards;
-  opacity: 0;
+.section {
+  padding: 96px 0;
+  border-top: 1px solid var(--border);
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.sectionHead {
+  display: flex;
+  align-items: baseline;
+  gap: 18px;
+  margin-bottom: 44px;
 }
 
-.title {
-  color: #2b3a55;
-  font-size: 42px;
-  font-weight: 800;
-  text-align: center;
-  margin-bottom: 50px;
-  position: relative;
-  animation: slideInFromTop 0.6s ease-out 0.2s forwards;
-  opacity: 0;
+.sectionNum {
+  color: var(--accent);
+  font-family: var(--mono);
+  font-size: 13px;
+  letter-spacing: 0.08em;
 }
 
-@keyframes slideInFromTop {
-  from {
-    opacity: 0;
-    transform: translateY(-30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.sectionTitle {
+  font-family: var(--display);
+  font-size: clamp(1.5rem, 3vw, 2.1rem);
+  font-weight: 600;
 }
 
-.title::after {
-  content: '';
-  display: block;
-  width: 80px;
-  height: 4px;
-  background: linear-gradient(to right, #f4f492, #ebb206);
-  margin: 15px auto 0;
-  border-radius: 2px;
-  animation: scaleIn 0.6s ease-out 0.4s forwards;
-  transform: scaleX(0);
-  transform-origin: center;
+.sectionRule {
+  flex: 1;
+  height: 1px;
+  background: var(--border);
 }
 
-@keyframes scaleIn {
-  from {
-    transform: scaleX(0);
-  }
-  to {
-    transform: scaleX(1);
-  }
-}
-
-.projectsGrid {
+.projectGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 22px;
 }
 
 .projectCard {
-  background: #ffffff;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
+  min-height: 300px;
   flex-direction: column;
-  opacity: 0;
-  animation: cardAppear 0.6s ease-out forwards;
-  animation-delay: calc(0.1s * var(--delay-index));
-}
-
-@keyframes cardAppear {
-  from {
-    opacity: 0;
-    transform: translateY(20px) scale(0.95);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
+  gap: 16px;
+  padding: 28px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  transition: border-color 0.2s ease, transform 0.2s ease;
 }
 
 .projectCard:hover {
-  transform: scale(1.02) translateY(-5px);
-  box-shadow: 0 15px 30px rgba(0, 180, 216, 0.25);
+  border-color: var(--accent);
+  transform: translateY(-3px);
 }
 
-.projectImage {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  transition: transform 0.5s ease;
+.projectTop {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
 }
 
-.projectCard:hover .projectImage {
-  transform: scale(1.05);
+.projectId {
+  color: var(--ink-faint);
+  font-family: var(--mono);
+  font-size: 11px;
 }
 
-.projectContent {
-  padding: 20px;
-  transform: translateY(0);
-  transition: transform 0.3s ease;
-}
-
-.projectCard:hover .projectContent {
-  transform: translateY(-5px);
-}
-
-.projectTitle {
+.projectName {
+  color: var(--ink);
+  font-family: var(--display);
   font-size: 20px;
-  font-weight: 700;
-  margin-bottom: 10px;
-  color: #2b3a55;
-  transition: color 0.3s ease;
+  font-weight: 600;
 }
 
-.projectCard:hover .projectTitle {
-  color: #00b4d8;
+.projectDesc {
+  flex: 1;
+  color: var(--ink-dim);
+  font-size: 14.5px;
 }
 
-.projectDescription {
-  font-size: 14px;
-  margin-bottom: 10px;
-  color: #555;
-  transition: color 0.3s ease;
-}
-
-.projectCard:hover .projectDescription {
-  color: #333;
-}
-
-.techList {
+.specLine {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin-bottom: 15px;
+  color: var(--ink-faint);
+  font-family: var(--mono);
+  font-size: 11.5px;
 }
 
-.tech {
-  background: #e0f7fa;
-  color: #0077b6;
-  padding: 4px 10px;
-  border-radius: 12px;
-  font-size: 12px;
-  font-weight: 600;
-  transition: all 0.3s ease;
-}
-
-.projectCard:hover .tech {
-  background: #00b4d8;
-  color: white;
-  transform: translateY(-2px);
+.specLine b {
+  color: var(--line-cyan);
+  font-weight: 500;
 }
 
 .projectLink {
-  display: inline-block;
-  text-decoration: none;
-  color: #00b4d8;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  position: relative;
-  padding-right: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 4px;
+  color: var(--accent);
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.03em;
 }
 
-.projectLink::after {
-  content: '→';
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  transition: transform 0.3s ease;
+.arrow {
+  transition: transform 0.18s ease;
 }
 
-.projectLink:hover {
-  color: #0077b6;
-  transform: translateX(5px);
+.projectCard:hover .arrow {
+  transform: translateX(4px);
 }
 
-.projectLink:hover::after {
-  transform: translate(5px, -50%);
+.otherGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 14px;
+  margin-top: 32px;
 }
 
-@media screen and (max-width: 768px) {
-  .container {
-    margin: 80px 5%;
-    padding: 40px 20px;
-  }
+.otherCard {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 18px 20px;
+  border: 1px dashed var(--border);
+  transition: border-color 0.2s ease;
+}
 
-  .projectImage {
-    height: 150px;
-  }
-  
-  .title {
-    font-size: 32px;
+.otherCard:hover {
+  border-color: var(--line-cyan);
+}
+
+.otherName {
+  color: var(--ink);
+  font-family: var(--mono);
+  font-size: 14px;
+}
+
+.otherDesc {
+  color: var(--ink-faint);
+  font-size: 13px;
+}
+
+@media (max-width: 700px) {
+  .projectGrid {
+    grid-template-columns: 1fr;
   }
 }

@@ -1,0 +1,171 @@
+[2m12:36:14 AM[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "../assets/projects/MoodVoice.png" from "src\App.jsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mD:/git_Repo/PortFolioProject/src/App.jsx[39m:16:27
+[33m  23 |  import gameImage from "../assets/projects/Game.png";
+  24 |  import lmsImage from "../assets/projects/LMS-Frontend.png";
+  25 |  import moodVoiceImage from "../assets/projects/MoodVoice.png";
+     |                              ^
+  26 |  import movieImage from "../assets/projects/Movie-Rec.png";
+  27 |  import portfolioImage from "../assets/projects/PortFolio.png";[39m
+      at formatError (file:///D:/git_Repo/PortFolioProject/node_modules/vite/dist/node/chunks/dep-42dae6ba.js:44066:46)
+      at TransformContext.error (file:///D:/git_Repo/PortFolioProject/node_modules/vite/dist/node/chunks/dep-42dae6ba.js:44062:19)
+      at normalizeUrl (file:///D:/git_Repo/PortFolioProject/node_modules/vite/dist/node/chunks/dep-42dae6ba.js:41845:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///D:/git_Repo/PortFolioProject/node_modules/vite/dist/node/chunks/dep-42dae6ba.js:41999:47
+      at async Promise.all (index 10)
+      at async TransformContext.transform (file:///D:/git_Repo/PortFolioProject/node_modules/vite/dist/node/chunks/dep-42dae6ba.js:41915:13)
+      at async Object.transform (file:///D:/git_Repo/PortFolioProject/node_modules/vite/dist/node/chunks/dep-42dae6ba.js:44356:30)
+      at async loadAndTransform (file:///D:/git_Repo/PortFolioProject/node_modules/vite/dist/node/chunks/dep-42dae6ba.js:55036:29)
+      at async viteTransformMiddleware (file:///D:/git_Repo/PortFolioProject/node_modules/vite/dist/node/chunks/dep-42dae6ba.js:64637:32)
+[2m12:42:09 AM[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "../assets/projects/MoodVoice.png" from "src\App.jsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mD:/git_Repo/PortFolioProject/src/App.jsx[39m:16:27
+[33m  23 |  import gameImage from "../assets/projects/Game.png";
+  24 |  import lmsImage from "../assets/projects/LMS-Frontend.png";
+  25 |  import moodVoiceImage from "../assets/projects/MoodVoice.png";
+     |                              ^
+  26 |  import movieImage from "../assets/projects/Movie-Rec.png";
+  27 |  import portfolioImage from "../assets/projects/PortFolio.png";[39m
+      at formatError (file:///D:/git_Repo/PortFolioProject/node_modules/vite/dist/node/chunks/dep-42dae6ba.js:44066:46)
+      at TransformContext.error (file:///D:/git_Repo/PortFolioProject/node_modules/vite/dist/node/chunks/dep-42dae6ba.js:44062:19)
+      at normalizeUrl (file:///D:/git_Repo/PortFolioProject/node_modules/vite/dist/node/chunks/dep-42dae6ba.js:41845:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///D:/git_Repo/PortFolioProject/node_modules/vite/dist/node/chunks/dep-42dae6ba.js:41999:47
+      at async Promise.all (index 10)
+      at async TransformContext.transform (file:///D:/git_Repo/PortFolioProject/node_modules/vite/dist/node/chunks/dep-42dae6ba.js:41915:13)
+      at async Object.transform (file:///D:/git_Repo/PortFolioProject/node_modules/vite/dist/node/chunks/dep-42dae6ba.js:44356:30)
+      at async loadAndTransform (file:///D:/git_Repo/PortFolioProject/node_modules/vite/dist/node/chunks/dep-42dae6ba.js:55036:29)
+      at async viteTransformMiddleware (file:///D:/git_Repo/PortFolioProject/node_modules/vite/dist/node/chunks/dep-42dae6ba.js:64637:32)
+[2m1:29:11 AM[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "../assets/projects/Laravel-LMS.png" from "src\App.jsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mD:/git_Repo/PortFolioProject/src/App.jsx[39m:16:21
+[33m  22 |  import ecommerceImage from "../assets/projects/ecommerce.png";
+  23 |  import gameImage from "../assets/projects/Game.png";
+  24 |  import lmsImage from "../assets/projects/Laravel-LMS.png";
+     |                        ^
+  25 |  import moodVoiceImage from "../assets/projects/MoodVoice.png";
+  26 |  import movieImage from "../assets/projects/Movie-Rec.png";[39m
+      at formatError (file:///D:/git_Repo/PortFolioProject/node_modules/vite/dist/node/chunks/dep-42dae6ba.js:44066:46)
+      at TransformContext.error (file:///D:/git_Repo/PortFolioProject/node_modules/vite/dist/node/chunks/dep-42dae6ba.js:44062:19)
+      at normalizeUrl (file:///D:/git_Repo/PortFolioProject/node_modules/vite/dist/node/chunks/dep-42dae6ba.js:41845:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///D:/git_Repo/PortFolioProject/node_modules/vite/dist/node/chunks/dep-42dae6ba.js:41999:47
+      at async Promise.all (index 9)
+      at async TransformContext.transform (file:///D:/git_Repo/PortFolioProject/node_modules/vite/dist/node/chunks/dep-42dae6ba.js:41915:13)
+      at async Object.transform (file:///D:/git_Repo/PortFolioProject/node_modules/vite/dist/node/chunks/dep-42dae6ba.js:44356:30)
+      at async loadAndTransform (file:///D:/git_Repo/PortFolioProject/node_modules/vite/dist/node/chunks/dep-42dae6ba.js:55036:29)
+      at async viteTransformMiddleware (file:///D:/git_Repo/PortFolioProject/node_modules/vite/dist/node/chunks/dep-42dae6ba.js:64637:32)
+[2m1:29:19 AM[22m [31m[1m[vite][22m[39m [31mInternal server error: D:\git_Repo\PortFolioProject\src\App.jsx: Identifier 'lmsImage' has already been declared. (17:7)
+
+  15 | import gameImage from "../assets/projects/Game.png";
+  16 | import lmsImage from "../assets/projects/LMS-Frontend.png";
+> 17 | import lmsImage from "../assets/projects/LMS-Frontend.png";
+     |        ^
+  18 | import moodVoiceImage from "../assets/projects/MoodVoice.png";
+  19 | import movieImage from "../assets/projects/Movie-Rec.png";
+  20 | import portfolioImage from "../assets/projects/PortFolio.png";[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mD:/git_Repo/PortFolioProject/src/App.jsx[39m:17:7
+[33m  15 |  import gameImage from "../assets/projects/Game.png";
+  16 |  import lmsImage from "../assets/projects/LMS-Frontend.png";
+  17 |  import lmsImage from "../assets/projects/LMS-Frontend.png";
+     |         ^
+  18 |  import moodVoiceImage from "../assets/projects/MoodVoice.png";
+  19 |  import movieImage from "../assets/projects/Movie-Rec.png";[39m
+      at instantiate (D:\git_Repo\PortFolioProject\node_modules\@babel\parser\lib\index.js:63:32)
+      at constructor (D:\git_Repo\PortFolioProject\node_modules\@babel\parser\lib\index.js:358:12)
+      at JSXParserMixin.raise (D:\git_Repo\PortFolioProject\node_modules\@babel\parser\lib\index.js:3207:19)
+      at ScopeHandler.checkRedeclarationInScope (D:\git_Repo\PortFolioProject\node_modules\@babel\parser\lib\index.js:1480:19)
+      at ScopeHandler.declareName (D:\git_Repo\PortFolioProject\node_modules\@babel\parser\lib\index.js:1451:12)
+      at JSXParserMixin.declareNameFromIdentifier (D:\git_Repo\PortFolioProject\node_modules\@babel\parser\lib\index.js:7460:16)
+      at JSXParserMixin.checkIdentifier (D:\git_Repo\PortFolioProject\node_modules\@babel\parser\lib\index.js:7456:12)
+      at JSXParserMixin.checkLVal (D:\git_Repo\PortFolioProject\node_modules\@babel\parser\lib\index.js:7395:12)
+      at JSXParserMixin.finishImportSpecifier (D:\git_Repo\PortFolioProject\node_modules\@babel\parser\lib\index.js:14099:10)
+      at JSXParserMixin.parseImportSpecifierLocal (D:\git_Repo\PortFolioProject\node_modules\@babel\parser\lib\index.js:14096:31)
+      at JSXParserMixin.maybeParseDefaultImportSpecifier (D:\git_Repo\PortFolioProject\node_modules\@babel\parser\lib\index.js:14220:12)
+      at JSXParserMixin.parseImportSpecifiersAndAfter (D:\git_Repo\PortFolioProject\node_modules\@babel\parser\lib\index.js:14073:29)
+      at JSXParserMixin.parseImport (D:\git_Repo\PortFolioProject\node_modules\@babel\parser\lib\index.js:14069:17)
+      at JSXParserMixin.parseStatementContent (D:\git_Repo\PortFolioProject\node_modules\@babel\parser\lib\index.js:12660:27)
+      at JSXParserMixin.parseStatementLike (D:\git_Repo\PortFolioProject\node_modules\@babel\parser\lib\index.js:12538:17)
+      at JSXParserMixin.parseModuleItem (D:\git_Repo\PortFolioProject\node_modules\@babel\parser\lib\index.js:12515:17)
+      at JSXParserMixin.parseBlockOrModuleBlockBody (D:\git_Repo\PortFolioProject\node_modules\@babel\parser\lib\index.js:13139:36)
+      at JSXParserMixin.parseBlockBody (D:\git_Repo\PortFolioProject\node_modules\@babel\parser\lib\index.js:13132:10)
+      at JSXParserMixin.parseProgram (D:\git_Repo\PortFolioProject\node_modules\@babel\parser\lib\index.js:12414:10)
+      at JSXParserMixin.parseTopLevel (D:\git_Repo\PortFolioProject\node_modules\@babel\parser\lib\index.js:12404:25)
+      at JSXParserMixin.parse (D:\git_Repo\PortFolioProject\node_modules\@babel\parser\lib\index.js:14300:10)
+      at parse (D:\git_Repo\PortFolioProject\node_modules\@babel\parser\lib\index.js:14341:38)
+      at parser (D:\git_Repo\PortFolioProject\node_modules\@babel\core\lib\parser\index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (D:\git_Repo\PortFolioProject\node_modules\@babel\core\lib\transformation\normalize-file.js:64:38)
+      at normalizeFile.next (<anonymous>)
+      at run (D:\git_Repo\PortFolioProject\node_modules\@babel\core\lib\transformation\index.js:21:50)
+      at run.next (<anonymous>)
+      at transform (D:\git_Repo\PortFolioProject\node_modules\@babel\core\lib\transform.js:22:41)
+      at transform.next (<anonymous>)
+      at step (D:\git_Repo\PortFolioProject\node_modules\gensync\index.js:261:32)
+      at D:\git_Repo\PortFolioProject\node_modules\gensync\index.js:273:13
+      at async.call.result.err.err (D:\git_Repo\PortFolioProject\node_modules\gensync\index.js:223:11)
+      at D:\git_Repo\PortFolioProject\node_modules\gensync\index.js:189:28
+      at D:\git_Repo\PortFolioProject\node_modules\@babel\core\lib\gensync-utils\async.js:68:7
+      at D:\git_Repo\PortFolioProject\node_modules\gensync\index.js:113:33
+      at step (D:\git_Repo\PortFolioProject\node_modules\gensync\index.js:287:14)
+      at D:\git_Repo\PortFolioProject\node_modules\gensync\index.js:273:13
+      at async.call.result.err.err (D:\git_Repo\PortFolioProject\node_modules\gensync\index.js:223:11)
+[2m1:32:15 AM[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "../assets/hero/" from "src\App.jsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mD:/git_Repo/PortFolioProject/src/App.jsx[39m:13:25
+[33m  19 |  import { Download, ExternalLink, Folder, Github, Linkedin, Menu, X } from "lucide-react";
+  20 |  import styles from "./App.module.css";
+  21 |  import profileImage from "../assets/hero/";
+     |                            ^
+  22 |  import ecommerceImage from "../assets/projects/ecommerce.png";
+  23 |  import gameImage from "../assets/projects/Game.png";[39m
+      at formatError (file:///D:/git_Repo/PortFolioProject/node_modules/vite/dist/node/chunks/dep-42dae6ba.js:44066:46)
+      at TransformContext.error (file:///D:/git_Repo/PortFolioProject/node_modules/vite/dist/node/chunks/dep-42dae6ba.js:44062:19)
+      at normalizeUrl (file:///D:/git_Repo/PortFolioProject/node_modules/vite/dist/node/chunks/dep-42dae6ba.js:41845:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///D:/git_Repo/PortFolioProject/node_modules/vite/dist/node/chunks/dep-42dae6ba.js:41999:47
+      at async Promise.all (index 6)
+      at async TransformContext.transform (file:///D:/git_Repo/PortFolioProject/node_modules/vite/dist/node/chunks/dep-42dae6ba.js:41915:13)
+      at async Object.transform (file:///D:/git_Repo/PortFolioProject/node_modules/vite/dist/node/chunks/dep-42dae6ba.js:44356:30)
+      at async loadAndTransform (file:///D:/git_Repo/PortFolioProject/node_modules/vite/dist/node/chunks/dep-42dae6ba.js:55036:29)
+      at async viteTransformMiddleware (file:///D:/git_Repo/PortFolioProject/node_modules/vite/dist/node/chunks/dep-42dae6ba.js:64637:32)
+Failed to resolve import "../assets/hero/serini" from "src\App.jsx". Does the file exist?
+[2m1:32:17 AM[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "../assets/hero/serini" from "src\App.jsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mD:/git_Repo/PortFolioProject/src/App.jsx[39m:13:25
+[33m  19 |  import { Download, ExternalLink, Folder, Github, Linkedin, Menu, X } from "lucide-react";
+  20 |  import styles from "./App.module.css";
+  21 |  import profileImage from "../assets/hero/serini";
+     |                            ^
+  22 |  import ecommerceImage from "../assets/projects/ecommerce.png";
+  23 |  import gameImage from "../assets/projects/Game.png";[39m
+      at formatError (file:///D:/git_Repo/PortFolioProject/node_modules/vite/dist/node/chunks/dep-42dae6ba.js:44066:46)
+      at TransformContext.error (file:///D:/git_Repo/PortFolioProject/node_modules/vite/dist/node/chunks/dep-42dae6ba.js:44062:19)
+      at normalizeUrl (file:///D:/git_Repo/PortFolioProject/node_modules/vite/dist/node/chunks/dep-42dae6ba.js:41845:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///D:/git_Repo/PortFolioProject/node_modules/vite/dist/node/chunks/dep-42dae6ba.js:41999:47
+      at async Promise.all (index 6)
+      at async TransformContext.transform (file:///D:/git_Repo/PortFolioProject/node_modules/vite/dist/node/chunks/dep-42dae6ba.js:41915:13)
+      at async Object.transform (file:///D:/git_Repo/PortFolioProject/node_modules/vite/dist/node/chunks/dep-42dae6ba.js:44356:30)
+      at async loadAndTransform (file:///D:/git_Repo/PortFolioProject/node_modules/vite/dist/node/chunks/dep-42dae6ba.js:55036:29)
+      at async viteTransformMiddleware (file:///D:/git_Repo/PortFolioProject/node_modules/vite/dist/node/chunks/dep-42dae6ba.js:64637:32)
+[2m1:32:54 AM[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "../assets/hero/serini.png" from "src\App.jsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mD:/git_Repo/PortFolioProject/src/App.jsx[39m:13:25
+[33m  19 |  import { Download, ExternalLink, Folder, Github, Linkedin, Menu, X } from "lucide-react";
+  20 |  import styles from "./App.module.css";
+  21 |  import profileImage from "../assets/hero/serini.png";
+     |                            ^
+  22 |  import ecommerceImage from "../assets/projects/ecommerce.png";
+  23 |  import gameImage from "../assets/projects/Game.png";[39m
+      at formatError (file:///D:/git_Repo/PortFolioProject/node_modules/vite/dist/node/chunks/dep-42dae6ba.js:44066:46)
+      at TransformContext.error (file:///D:/git_Repo/PortFolioProject/node_modules/vite/dist/node/chunks/dep-42dae6ba.js:44062:19)
+      at normalizeUrl (file:///D:/git_Repo/PortFolioProject/node_modules/vite/dist/node/chunks/dep-42dae6ba.js:41845:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///D:/git_Repo/PortFolioProject/node_modules/vite/dist/node/chunks/dep-42dae6ba.js:41999:47
+      at async Promise.all (index 6)
+      at async TransformContext.transform (file:///D:/git_Repo/PortFolioProject/node_modules/vite/dist/node/chunks/dep-42dae6ba.js:41915:13)
+      at async Object.transform (file:///D:/git_Repo/PortFolioProject/node_modules/vite/dist/node/chunks/dep-42dae6ba.js:44356:30)
+      at async loadAndTransform (file:///D:/git_Repo/PortFolioProject/node_modules/vite/dist/node/chunks/dep-42dae6ba.js:55036:29)
+      at async viteTransformMiddleware (file:///D:/git_Repo/PortFolioProject/node_modules/vite/dist/node/chunks/dep-42dae6ba.js:64637:32)

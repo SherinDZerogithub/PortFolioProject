@@ -2,8 +2,8 @@
   {
     "category": "Frontend",
     "skills": [
-      { "title": "HTML", "imageSrc": "skills/html.png" },
-      { "title": "CSS", "imageSrc": "skills/css.png" },
+      { "title": "HTML5", "imageSrc": "skills/html.png" },
+      { "title": "CSS3", "imageSrc": "skills/css.png" },
       { "title": "JavaScript", "imageSrc": "skills/javascript.png" },
       { "title": "React", "imageSrc": "skills/react.png" },
       { "title": "Next.js", "imageSrc": "skills/nextjs.256x153.png" },
@@ -15,15 +15,15 @@
     "skills": [
       { "title": "Node.js", "imageSrc": "skills/node.png" },
       { "title": "Express.js", "imageSrc": "skills/express-js.png" },
-      { "title": "AppWrite", "imageSrc": "skills/Appwrite.png" }
+      { "title": "Appwrite", "imageSrc": "skills/Appwrite.png" }
     ]
   },
   {
     "category": "Database",
     "skills": [
       { "title": "MongoDB", "imageSrc": "skills/mongodb.png" },
-      { "title": "MySql", "imageSrc": "skills/MySQL.png" },
-      { "title": "Derby database", "imageSrc": "skills/final_logo.png" }
+      { "title": "MySQL", "imageSrc": "skills/MySQL.png" },
+      { "title": "Derby DB", "imageSrc": "skills/final_logo.png" }
     ]
   },
   {

@@ -1,31 +1,26 @@
 [
-    {
-      "title": "E-Commerce App ",
-      "description": "(OnGoing)----Developed a full-featured E-commerce web application that allows users to browse products, add items to their cart, manage their profiles, and securely complete purchases. The admin panel enables easy product management and inventory control. Integrated user authentication, responsive design, and a dynamic shopping experience for both desktop and mobile users.",
-      "imageSrc": "projects/ecommerce.png",
-      "tech": ["Next.js", "MongoDB", "Tailwind", "Cloudinary", "Redux Toolkit"],
-      "link": "https://github.com/SherinDZerogithub/e-commerce.git"
-    },
-    {
-      "title": "LMS Frontend PRoject",
-      "description": "A responsive frontend for a Learning Management System (LMS) designed to provide an intuitive user experience for students and instructors. Features include course browsing, user authentication, interactive dashboards. Built with modern frontend technologies for optimal performance and scalability.",
-      "imageSrc": "projects/LMS-Frontend.png",
-      "tech": ["React.js",
-    "TypeScript",
-    "Redux (or Zustand)",
-    "Tailwind CSS",
-    "Axios (for API calls)",
-    "React Router",
-    "Clerk Auth",
-    "JWT Authentication"],
-      "link": "https://github.com/SherinDZerogithub/LMS.git"
-    },
-    {
-      "title": "Portfolio Website",
-      "description": "Designed and developed a modern, responsive personal portfolio website to showcase my projects, skills, and professional experience. The site highlights my background in frontend and fullstack development, featuring interactive UI components, animated transitions, and categorized skills. It includes dedicated sections for About, Projects, Skills, and Contact, along with integration for smooth navigation and accessibility.",
-      "imageSrc": "projects/PortFolio.png",
-      "tech": ["React", "CSS Modules", "Vite"],
-      "link": "https://github.com/SherinDZerogithub/PortFolioProject.git"
-    }
-  ]
-  
+  {
+    "title": "E-Commerce App",
+    "type": "WEB",
+    "description": "A full-featured storefront with product browsing, cart, user authentication, and an admin panel for managing catalog and orders.",
+    "imageSrc": "projects/ecommerce.png",
+    "tech": ["React", "Node.js", "MongoDB", "Cloudinary"],
+    "link": "https://github.com/SherinDZerogithub/e-commerce"
+  },
+  {
+    "title": "Task Manager",
+    "type": "WEB",
+    "description": "A role-based task management system with a professional admin dashboard for tracking work across a team.",
+    "imageSrc": "projects/LMS-Frontend.png",
+    "tech": ["Laravel (PHP)", "MySQL", "AdminLTE", "Tailwind CSS"],
+    "link": "https://github.com/SherinDZerogithub/tasks-manager"
+  },
+  {
+    "title": "Movie Recommendation",
+    "type": "MOBILE",
+    "description": "A mobile app for discovering movies, pulling live data from a public movie database with a clean, native feel.",
+    "imageSrc": "projects/Movie-Rec.png",
+    "tech": ["React Native", "Appwrite", "TMDB API"],
+    "link": "https://github.com/SherinDZerogithub/Movie-Recommendation"
+  }
+]

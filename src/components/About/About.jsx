@@ -1,57 +1,117 @@
 import React from "react";
+import { ArrowUpRight } from "lucide-react";
 import styles from "./About.module.css";
-import { getImageUrl } from "../../utils";
+
+const specs = [
+  ["Institution", "Univ. of Sri Jayawardenepura"],
+  ["Programme", "B.Sc. Computer Science"],
+  ["Public repos", "9"],
+  ["Design tools", "Figma, Canva"],
+  ["Looking for", "Internship, 2026"],
+];
 
 export const About = () => {
   return (
-    <section className={styles.container} id="about">
-      <div className={styles.backgroundPattern}></div>
-      <h2 className={styles.title}>About Me</h2>
-      <div className={styles.content}>
-        <div className={styles.imageContainer}>
-          <img
-            src={getImageUrl("hero/SeriniPuwakgolla.jpg")}
-            alt="Serini Puwakgolla"
-            className={styles.aboutImage}
-          />
-          <div className={styles.imageBorder}></div>
-        </div>
-        <div className={styles.aboutContent}>
-          <div className={styles.introText}>
-            <h1 className={styles.heading}>Hi, I'm Serini</h1>
-            <p>
-              Hi! I'm a passionate and detail-oriented{" "}
-              <strong>Web Developer</strong> & <strong>UI Designer</strong> who
-              thrives on turning ideas into reality through clean code and
-              thoughtful design. I specialize in building responsive,
-              user-friendly websites and web applications using modern
-              technologies like <strong>React</strong>, <strong>Next.js</strong>
-              , <strong>Node.js</strong>, and <strong>MongoDB</strong>.
-            </p>
+    <>
+      <section className={styles.hero} id="top">
+        <div className={`${styles.titleblock} ${styles.crop}`}>
+          <span className={styles.cbl} aria-hidden="true" />
+          <span className={styles.cbr} aria-hidden="true" />
+          <div className={styles.eyebrow}>
+            DWG NO. SP-2026-04 <span className={styles.rule} /> STUDENT PORTFOLIO
+          </div>
+          <h1 className={styles.name}>Serini Puwakgolla</h1>
+          <div className={styles.role}>
+            Computer Science Undergraduate <span>/</span> Full-Stack Developer <span>/</span> UI Designer
+          </div>
+          <p className={styles.lede}>
+            Fourth-year CS student at the University of Sri Jayawardenepura, building full-stack apps,
+            machine learning models, and interfaces end to end, from Figma frame to production database.
+            Currently looking for an internship where I can ship real work.
+          </p>
 
-            <p>
-              With a strong eye for aesthetics and a solid foundation in
-              fullstack development, I focus on creating digital experiences
-              that are both visually appealing and technically sound. From
-              crafting engaging interfaces to building scalable backend systems,
-              I love solving real-world problems through technology.
-            </p>
+          <div className={styles.ctaRow}>
+            <a className={`${styles.btn} ${styles.primary}`} href="#projects">
+              View Projects <ArrowUpRight size={15} />
+            </a>
+            <a
+              className={`${styles.btn} ${styles.ghost}`}
+              href="https://github.com/SherinDZerogithub"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub <ArrowUpRight size={15} />
+            </a>
+            <a
+              className={`${styles.btn} ${styles.ghost}`}
+              href="https://www.linkedin.com/in/serini-p-96463a24b"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn <ArrowUpRight size={15} />
+            </a>
+          </div>
 
-            <p>
-              Beyond development, I bring a creative edge to my work — having
-              designed flyers, digital assets, and content for student
-              organizations using tools like <strong>Figma</strong> and{" "}
-              <strong>Canva</strong>.
-            </p>
-
-            <p>
-              Currently, I'm focused on sharpening my backend development skills
-              and building projects that seamlessly blend great design with
-              robust functionality.
-            </p>
+          <div className={styles.strip}>
+            <div className={styles.cell}>
+              <div className={styles.key}>Status</div>
+              <div className={styles.value}>Seeking Internship</div>
+            </div>
+            <div className={styles.cell}>
+              <div className={styles.key}>Year</div>
+              <div className={styles.value}>4th Year, B.Sc CS</div>
+            </div>
+            <div className={styles.cell}>
+              <div className={styles.key}>Focus</div>
+              <div className={styles.value}>Full-Stack + UI</div>
+            </div>
+            <div className={styles.cell}>
+              <div className={styles.key}>Based</div>
+              <div className={styles.value}>Sri Lanka</div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <section className={styles.section} id="about">
+        <div className={styles.sectionHead}>
+          <span className={styles.sectionNum}>01</span>
+          <span className={styles.sectionTitle}>About</span>
+          <span className={styles.sectionRule} />
+        </div>
+        <div className={styles.aboutGrid}>
+          <div className={styles.copy}>
+            <p>
+              I started on the <strong>design side</strong>, laying out interfaces in Figma and Canva,
+              before moving into <strong>frontend</strong>, then <strong>full-stack</strong> development.
+              That path shows in how I build: I care about how a product looks and feels as much as how
+              its backend is structured.
+            </p>
+            <p>
+              My project work spans <strong>e-commerce platforms</strong>,{" "}
+              <strong>role-based task management systems</strong>, <strong>mobile apps</strong>, and{" "}
+              <strong>machine learning models</strong>, a mix that reflects a CS degree taken seriously
+              across web, data, and design.
+            </p>
+            <p>
+              I am in my final year and actively looking for an <strong>internship</strong> where I can
+              contribute to a real codebase, learn from an experienced team, and keep building.
+            </p>
+          </div>
+
+          <aside className={`${styles.factPanel} ${styles.crop}`} aria-label="Quick specs">
+            <span className={styles.cbl} aria-hidden="true" />
+            <span className={styles.cbr} aria-hidden="true" />
+            <div className={styles.panelLabel}>Quick Specs</div>
+            {specs.map(([key, value]) => (
+              <div className={styles.factRow} key={key}>
+                <span>{key}</span>
+                <span className={styles.factValue}>{value}</span>
+              </div>
+            ))}
+          </aside>
+        </div>
+      </section>
+    </>
   );
 };

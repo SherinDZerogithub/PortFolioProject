@@ -1,37 +1,25 @@
 import React from "react";
-import styles from "./skills.module.css";
+import styles from "./Skills.module.css";
 import skillsData from "../../data/skills.json";
-import { getImageUrl } from "../../utils";
 
 const SkillsPage = () => {
   return (
-    <section className={styles.container} id="skills">
-      <h1 className={styles.title}>My Expertise</h1>
-      <div className={styles.skillsContainer}>
-        {skillsData.map((categoryData, categoryIdx) => (
-          <div
-            key={categoryIdx}
-            className={styles.categorySection}
-            style={{ "--category-index": categoryIdx }}
-          >
-            <h2 className={styles.categoryTitle}>{categoryData.category}</h2>
-            <div className={styles.skillsGrid}>
-              {categoryData.skills.map((skill, skillIdx) => (
-                <div
-                  className={styles.skillCard}
-                  key={skillIdx}
-                  style={{ "--skill-index": skillIdx }}
-                >
-                  <div className={styles.skillIconWrapper}>
-                    <img
-                      src={getImageUrl(skill.imageSrc)}
-                      alt={skill.title}
-                      className={styles.skillIcon}
-                    />
-                    <div className={styles.glow}></div>
-                  </div>
-                  <h3 className={styles.skillTitle}>{skill.title}</h3>
-                </div>
+    <section className={styles.section} id="stack">
+      <div className={styles.sectionHead}>
+        <span className={styles.sectionNum}>02</span>
+        <span className={styles.sectionTitle}>Tech Stack</span>
+        <span className={styles.sectionRule} />
+      </div>
+
+      <div className={styles.legend}>
+        {skillsData.map((categoryData) => (
+          <div className={styles.legendCat} key={categoryData.category}>
+            <span className={styles.category}>{categoryData.category}</span>
+            <div className={styles.chipRow}>
+              {categoryData.skills.map((skill) => (
+                <span className={styles.chip} key={skill.title}>
+                  {skill.title}
+                </span>
               ))}
             </div>
           </div>

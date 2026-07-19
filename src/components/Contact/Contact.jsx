@@ -1,62 +1,48 @@
 import React from "react";
+import { ArrowUpRight, Mail } from "lucide-react";
 import styles from "./Contact.module.css";
-import {
-  Envelope,
-  GithubLogo,
-  LinkedinLogo,
-  TwitterLogo,
-  InstagramLogo,
-} from "@phosphor-icons/react";
 
 export const Contact = () => {
   return (
-    <footer className={styles.container} id="contact">
-      <div className={styles.content}>
-        <h2 className={styles.title}>Get In Touch</h2>
-
-        <div>
-          <p className={styles.description}>
-            Feel free to reach out for collaborations or just a friendly hello!!!
+    <footer className={styles.footer} id="contact">
+      <div className={styles.wrap}>
+        <div className={`${styles.contactPanel} ${styles.crop}`}>
+          <span className={styles.cbl} aria-hidden="true" />
+          <span className={styles.cbr} aria-hidden="true" />
+          <span className={styles.sectionNum}>05 / CONTACT</span>
+          <h2>Let's build something.</h2>
+          <p>
+            Final-year CS student, open to internship opportunities in full-stack or frontend development.
+            Reach out on LinkedIn or check out the code on GitHub.
           </p>
-
-          <div className={styles.contactMethods}>
-            <div className={styles.contactLink}>
-              <Envelope size={24} className={styles.icon} />
-              <span>SeriniPuwakgolla@gmail.com</span>
-            </div>
-          </div>
-
-          <div className={styles.socialLinks}>
+          <div className={styles.contactLinks}>
             <a
-              href="https://github.com/SherinDZerogithub"
-              target="_blank"
-              rel="noopener noreferrer"
+              className={`${styles.btn} ${styles.primary}`}
+              href="mailto:SeriniPuwakgolla@gmail.com"
             >
-              <GithubLogo size={24} className={styles.socialIcon} />
+              <Mail size={15} /> Email Me
             </a>
             <a
+              className={`${styles.btn} ${styles.ghost}`}
               href="https://www.linkedin.com/in/serini-p-96463a24b"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <LinkedinLogo size={24} className={styles.socialIcon} />
+              Connect on LinkedIn <ArrowUpRight size={15} />
             </a>
-
             <a
-              href="https://www.instagram.com/sherin_d_zero?igsh=MXRsa2FudDUzdmluaw==&utm_source=ig_contact_invite"
+              className={`${styles.btn} ${styles.ghost}`}
+              href="https://github.com/SherinDZerogithub"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <InstagramLogo size={24} className={styles.socialIcon} />
+              See all repos <ArrowUpRight size={15} />
             </a>
           </div>
         </div>
-
-        <div className={styles.footerBottom}>
-          <p>
-            © {new Date().getFullYear()} Serini Puwakgolla. All rights reserved.
-          </p>
-          <p>Built with React and ❤️</p>
+        <div className={styles.footMeta}>
+          <span>© 2026 Serini Puwakgolla</span>
+          <span>Built with intent, not a template</span>
         </div>
       </div>
     </footer>
